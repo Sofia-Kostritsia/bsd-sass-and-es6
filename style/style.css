@@ -1,0 +1,327 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Philosopher:ital,wght@1,700&family=Rubik+Mono+One&display=swap');
+
+@font-face {
+    font-family: "Phenomena-Regular-Regular";
+    src: url("https://db.onlinewebfonts.com/t/2360fe87d82d652ed8c9f1b03f26306e.eot");
+    src: url("https://db.onlinewebfonts.com/t/2360fe87d82d652ed8c9f1b03f26306e.eot?#iefix")format("embedded-opentype"),
+    url("https://db.onlinewebfonts.com/t/2360fe87d82d652ed8c9f1b03f26306e.woff2")format("woff2"),
+    url("https://db.onlinewebfonts.com/t/2360fe87d82d652ed8c9f1b03f26306e.woff")format("woff"),
+    url("https://db.onlinewebfonts.com/t/2360fe87d82d652ed8c9f1b03f26306e.ttf")format("truetype"),
+    url("https://db.onlinewebfonts.com/t/2360fe87d82d652ed8c9f1b03f26306e.svg#Phenomena-Regular-Regular")format("svg");
+}
+
+body{
+    width: 99%;
+    height: auto;
+    background: rgb(2,0,36);
+    background: linear-gradient(90deg, rgb(36, 0, 0) 10%, rgb(121, 9, 9) 55%, rgb(255, 0, 0) 100%);
+    padding-bottom: 10%;
+}
+ul.no-bullets {
+    width: 100%;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(156, 4, 4);
+}
+li{
+    float: left;
+}
+li:last-child {
+    border-right: none;
+}
+.menu li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    background-color: rgb(156, 4, 4);
+}
+.menu li .active {
+    background-color: #000000;
+}
+
+.menu a{
+    color: rgb(78, 0, 5);
+    font-size: 2.5vh;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.menu{
+    width: 100%;
+    margin-left: -0.5%;
+    margin-top: -0.5%;
+    position: fixed;
+    z-index: 1;
+    align-items: center;
+    background-color: rgba(255, 0, 0, 0.189);
+}
+
+.text{
+    color:rgb(255, 255, 255);
+    width: 80%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-size: 3.2vh;
+    text-align: justify;
+    font-family: "Phenomena-Regular";
+}
+.click{
+    width: 100px;
+    height: 100px;
+    font-size: larger;
+    border-radius: 25px;
+    border: solid 3px black;
+    background: linear-gradient(90deg, rgb(255, 0, 0) 10%, rgb(121, 9, 9) 55%, rgb(33, 3, 3) 100%);
+    position: fixed;
+    left: 85%;
+    display: none;
+}
+.block{
+    display: none;
+    width: 80%;
+}
+.up{
+    width: 15vw;
+    border-radius: 25px;
+}
+.down{
+    width: 15vw;
+    border-radius: 25px;
+    
+}
+.img-click{
+    width: 90vw;
+    height: 10vw;
+    background: linear-gradient(90deg, rgb(255, 0, 0) 10%, rgb(121, 9, 9) 55%, rgb(33, 3, 3) 100%);
+    border-radius: 3vw;
+    border: none;
+    padding-left: 2%;
+    padding-top: 0.5%;
+    margin-top: 3%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+}
+.img-click img{
+    width: 10%;
+    border-radius: 50%;
+}
+
+#info{
+    padding-top: 5%;
+    margin-left: 5%;
+}
+.name{
+    font-size: 2.2vw;
+    font-family: 'Philosopher', sans-serif;
+    /* margin-left: 24vw;
+    margin-right: 24vw; */
+}
+.burger{
+    display: none;
+}
+.img-click:hover{
+    box-shadow: 1px 1px 50px 0.5px rgba(255, 255, 255, 0.626);
+}
+.text-org{
+    font-size: 3.2vh;
+    text-align: justify;
+    font-family: 'Phenomena-Regular';
+    color: rgb(255, 255, 255);
+    white-space: pre-wrap;
+}
+.left-photo{
+    width: 45%;
+    height: auto;
+    margin-top: 5%;
+    
+}
+.left-photo img{
+    width: 40vw;
+    border-radius: 25px;
+}
+h1{
+    font-size: 5vw;
+    font-family: 'Phenomena-Regular';
+    color: rgb(255, 255, 255);
+}
+
+.info-about-author-top{
+    width: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.info-about-author-bot{
+    width: 120%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.text-autor{
+    width: 100%;
+    font-size: 2.2vw;
+    font-family: 'Phenomena-Regular';
+    color: rgb(255, 255, 255);
+    text-align: justify;
+    margin-right: 5%;
+}
+.organization{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+}
+.up-h1{
+    display: none;
+    position: absolute;
+    top: -4%;
+    left: 10%;
+}
+.up-h1 p{
+    font-family: 'Phenomena-Regular';
+    font-size: 100px;
+    color: rgb(255, 255, 255);
+}
+.info-about-author{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 0% 2% -5% 2%;
+    
+}
+
+
+
+@media only screen and (max-device-width: 600px){
+    body{
+        width: 80%;
+    }
+    .up-h1{
+        display: block;
+    }
+    .img-click{
+        width: 90vw;
+        height: 17vw;
+        border-radius: 6vw;
+        margin-top: 10%;
+        align-items: center;
+    }
+
+    .img-click img{
+        width: 15%;
+        border-radius: 50%;
+        margin-top: 0%;
+    }
+
+    .name{
+        font-size: 5vw;
+    }
+
+    .burger{
+        display: block;
+    }
+
+    .text{
+        margin-top: -10%;
+        font-size: 2.5vh;
+    }
+    #b h1{
+        font-size: 4vh;
+    }
+    .click{
+        display: block;
+        z-index: 2;
+    }
+    .menu{
+        border-radius: 25px;
+        display: none;
+        width: 50%;
+        right: 5%;
+        top: 5%;
+    }
+    .menu ul{
+        border-radius: 25px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .menu li{
+        margin: 0;
+        width: inherit;
+    }
+    .up{
+        width: 30vw;
+        border-radius: 25px;
+        display: none;
+    }
+    .down{
+        width: 30vw;
+        border-radius: 25px;
+        display: none;
+    }
+    #info{
+        padding-top: 12%;
+        margin-left: 5%;
+    }
+    .text-org{
+        font-size: 2.5vh;
+        text-align: justify;
+        font-family: 'Phenomena-Regular';
+        color: rgb(255, 255, 255);
+        white-space: pre-wrap;
+    }
+    .left-photo{
+        width: 45%;
+        height: auto;
+        margin-top: 15%;
+        
+    }
+    .left-photo img{
+        width: 220%;
+        border-radius: 25px;
+        margin-top: 5%;
+    }
+    h1{
+        font-size: 5vw;
+        font-family: 'Phenomena-Regular';
+        color: rgb(255, 255, 255);
+    }
+    .organization{
+        width: 100%;
+        margin-left: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+    #mori-corporation{
+        margin-top: -25%;
+    }
+    .info-about-author-top{
+    width: 140%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.info-about-author-bot{
+    width: 140%;
+    display: flex;
+    align-items: center;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+}
+.text-autor{
+    width: 100%;
+    font-size: 2.2vh;
+    font-family: 'Phenomena-Regular';
+    color: rgb(255, 255, 255);
+    text-align: justify;
+}
+.block{
+    align-items: center;
+}
+}
